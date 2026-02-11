@@ -1,0 +1,23 @@
+REPORTE PARA: mi_archivo.Dockerfile
+========================================
+TIPO            | VALOR
+----------------------------------------
+COMMENT         | # Mi imagen de Node
+KEYWORD         | FROM
+STRING          |  node:18-alpine
+KEYWORD         | WORKDIR
+STRING          |  /app
+KEYWORD         | COPY
+STRING          |  . .
+KEYWORD         | RUN
+STRING          |  npm install --production
+KEYWORD         | CMD
+STRING          |  ["node", "index.js"]
+KEYWORD         | EXPOSE
+STRING          |  8080
+
+========================================
+RESUMEN DE INSTRUCCIONES:
+COMMENT: 1
+KEYWORD: 6
+STRING: 6
